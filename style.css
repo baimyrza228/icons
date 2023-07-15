@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(88, 81, 81);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main{
+    border: 1px solid;
+    width: 1000px;
+    height: 270px;
+}
+
+.main li{
+    list-style: none;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+    border: 1px solid silver;
+    transition: 1s;
+    justify-content: center;
+}
+
+.main li i{
+    margin: 20px;
+    font-size: 25px;
+}
+
+.apple{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.face{
+    color: rgb(2, 2, 238);
+    background-color: white;
+}
+
+.gith{
+    color: rgb(71, 71, 71);
+    background-color: white;
+}
+
+.insta{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 37, 37);
+}
+
+.link{
+    color: rgb(4, 49, 249);
+    background-color: white;
+}
+
+.odn{
+    color: rgb(223, 148, 11);
+    background-color: white;
+}
+
+.pn{
+    color: red;
+    background-color: white;
+}
+
+.skype{
+    color: rgb(0, 102, 255);
+    background-color: white;
+}
+
+.steam{
+    color: blue;
+    background-color: rgb(255, 255, 255);
+}
+
+.tg{
+    color: rgb(0, 72, 255);
+    background-color: white;
+}
+
+.twitch{
+    background-color: rgb(155, 4, 255);
+}
+
+.tw{
+    color: rgb(0, 106, 255);
+    background-color: black;
+}
+
+.vk{
+    background-color: rgb(89, 89, 152);
+    color: white;
+}
+
+.wa{
+    background-color: limegreen;
+    color: white;
+}
+
+.win{
+    color: rgb(0, 123, 255);
+    background-color: black;
+}
+
+.yt{
+    color: red;
+    background-color: black;
+}
+
+.main li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    border: 1px solid gold;
+    transition: all 0.5s ease-in;
+}
+
+li:hover::before {
+    transform: rotate(360deg);
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 15px goldenrod;
+}
+
+@media (max-width:600px){
+    .main{
+        width: 300px;
+        height: 500px;
+        flex-wrap: wrap;
+    }
+
+    .main li{
+        list-style: none;
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        margin: 0 auto;
+        cursor: pointer;
+        position: relative;
+        margin: 10px;
+        border: 1px solid silver;
+        transition: 1s;
+        justify-content: center;
+    }
+    
+}
